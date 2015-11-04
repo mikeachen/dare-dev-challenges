@@ -1,6 +1,58 @@
 /**
  * Remove default margin.
  */
-body {
+html, body {
   margin: 0;
+  padding: 0;
+}
+
+body {
+    background: #C1C1C1;
+}
+
+#welcome {
+    position: absolute;
+    top: 45px;
+    left: 60px;
+    font-size: 22px;
+}
+
+#where {
+    position: absolute;
+    top: 100px;
+}
+
+#if {
+    position: absolute;
+    top: 145px;
+}
+
+#image {
+    position: absolute;
+    top: 180px;
+}
+
+#www {
+    position: absolute;
+    top: 700px;
+}
+
+.purple-link {
+    color: #571F8C;
+    text-decoration: underline;
+}
+
+.blue-link {
+    color: blue;
+    text-decoration: underline;
+}
+
+.teal-link {
+    color: #00FFFF;
+    text-decoration: underline;
+}
+
+.left-margin {
+    position: absolute;
+    left: 60px;
 }

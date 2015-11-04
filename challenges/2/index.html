@@ -5,5 +5,27 @@
     <link rel="stylesheet" href="./styles.css">
   </head>
   <body>
+    <img id="michael" src="assets/michael.png">
+    <img id="logo" src="assets/logo_sega.png">
+    <div id="mike">MICHAEL</div>
+    <div id="jacksons">JACKSON'S</div>
+    <div id="moonwalker">M<span class="small-moon">OONWALKE<span>R</div>
+    <script type="text/javascript">
+        function scaleText(element, desiredWidth, desiredHeight){
+            var actualWidth = parseInt(window.getComputedStyle(element).width);
+            var scaleX = desiredWidth ? desiredWidth / actualWidth : 1;
+            var actualHeight = parseInt(window.getComputedStyle(element).width);
+            var scaleY = desiredHeight ? desiredHeight / actualHeight : 1;
+            element.style.transform = `scale(${scaleX}, ${scaleY})`;
+            element.style.transformOrigin = 'top left';
+        };
+
+        var m = document.getElementById('m');
+        scaleText(m, 450, 60);
+        var jack = document.getElementById('jacksons');
+        scaleText(m, 450, 60);
+        var jack = document.getElementById('moonwalker');
+        scaleText(m, 620, 66);
+    </script>
   </body>
 </html>
